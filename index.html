@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AUTOGUESSR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bloque">
+    <div id="titulos">
+
+      <img src="imagenes/car-svgrepo-com.svg" alt="" id="carimagentitulo">
+      <h1 class="titulo">AUTOGUESSR</h1>
+
+    </div>
+
+    <div class="pistas" id="pistasContainer">
+      <div class="pista" id="pista0"></div>
+      <div class="pista" id="pista1"></div>
+      <div class="pista" id="pista2"></div>
+      <div class="pista" id="pista3"></div>
+      <div class="pista" id="pista4"></div>
+      <div class="pista" id="pista5"></div>
+    </div>
+
+
+    <div class="controles">
+
+
+
+      <div class="poner">
+        <div class="inputWrap">
+          <input id="adivinador" autocomplete="off" placeholder="Escribí el modelo (ej: Ford Mustang)"/>
+        </div>
+        
+        <div class="controls">
+          <div class="btn-row">
+            <button id="btnSiguiente">SIGUIENTE PISTA</button>
+            <button id="btnAdivinar">ADIVINAR</button>
+          </div>
+          <button id="btnReiniciar">JUGAR DE NUEVO</button>
+        </div>
+        <div id="sugerencias" class="sugerencias"></div>
+      </div>
+  
+      <div id="resultado"></div>
+      <div class="small">Pistas mostradas: <span id="contador">0</span> / 6</div>
+    </div>
+    </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
